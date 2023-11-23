@@ -1,0 +1,48 @@
+<div class="sideNav">
+    <img class="logo" src="/assets/images/logo.png">
+   
+    <ul class="menu">
+        <a [routerLink]="['/']" [routerLinkActive]="'menuActive'" [routerLinkActiveOptions]="{exact:true}">
+        <li >
+          
+            <i class="fa fa-tachometer"></i>
+            Dashboard
+     
+            </li>
+        </a>
+
+        <a [routerLink]="['/attendance']"  [routerLinkActive]="'menuActive'" [routerLinkActiveOptions]="{exact:true}" >
+        <li>
+           
+            <i class="fa fa-calendar"></i>Attendance
+            
+          
+        </li>
+    </a>
+    
+    <a [routerLink]="['/reports']" [routerLinkActive]="'menuActive'" [routerLinkActiveOptions]="{exact:true}" >
+        <li>
+            
+            <i class="fa fa-pie-chart"></i>Reports
+           
+        </li>
+    </a>
+
+    <a [routerLink]="['/settings']" [routerLinkActive]="'menuActive'" [routerLinkActiveOptions]="{exact:true}">
+        <li>
+            <i class="fa fa-cog"></i>
+            Settings
+           
+        </li>
+    </a>
+
+    <a [routerLink]="['/users']" [routerLinkActive]="'menuActive'" [routerLinkActiveOptions]="{exact:true}">
+        <li>
+            <i class="fa fa-users"></i>
+            Users
+           
+        </li>
+    </a>
+      
+    </ul>
+</div>

@@ -1,14 +1,38 @@
-import { Component } from '@angular/core';
+import { Component, OnChanges, SimpleChanges } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './auth/login/login.component';
+import { SideNavComponent } from './app-core/common/side-nav/side-nav.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet],
+  imports: [CommonModule, RouterOutlet, FormsModule, LoginComponent, SideNavComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent {
+export class AppComponent implements OnChanges {
   title = 'inMest-web';
+  name = 'Shad';
+  profile = {
+    id: 1,
+    firstName: "Shadrack",
+    lastName: "Apollo",
+    middleName: "Amekileng",
+  }
+
+  constructor(){
+    console.log("construct this");
+  }
+  ngOnChanges(changes: SimpleChanges): void {
+    console.log(this.name, 'onChanges');
+    for (const inputChange in changes){
+      console.log(changes[inputChange].firstChange, inputChange);
+    } 
+  }
+
+  ngOnInit(): void{
+    console.log('On Init');
+  }
 }
