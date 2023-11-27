@@ -5,6 +5,8 @@ import { ReportsComponent } from './dashboard/reports/reports.component';
 import { SettingsComponent } from './dashboard/settings/settings.component';
 import { UserDetailComponent } from './dashboard/user-detail/user-detail.component';
 import { UsersComponent } from './dashboard/users/users.component';
+import { LeaveComponent } from './dashboard/leave/leave.component';
+import { LeaveDetailsComponent } from './dashboard/leave-details/leave-details.component';
 
 export const routes: Routes = [
     {path : '', component: HomeComponent},
@@ -13,4 +15,6 @@ export const routes: Routes = [
     {path : 'settings', component: SettingsComponent},
     {path : 'user-detail', component: UserDetailComponent},
     {path : 'users', component: UsersComponent},
+    {path : 'leave', component: LeaveComponent},
+    {path : 'leave/:id/:name', component: LeaveDetailsComponent},
 ];
