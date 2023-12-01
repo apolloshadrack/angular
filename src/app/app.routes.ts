@@ -7,6 +7,7 @@ import { UserDetailComponent } from './dashboard/user-detail/user-detail.compone
 import { UsersComponent } from './dashboard/users/users.component';
 import { LeaveComponent } from './dashboard/leave/leave.component';
 import { LeaveDetailsComponent } from './dashboard/leave-details/leave-details.component';
+import { AnalyticsComponent } from './dashboard/analytics/analytics.component';
 
 export const routes: Routes = [
     {path : '', component: HomeComponent},
@@ -15,6 +16,7 @@ export const routes: Routes = [
     {path : 'settings', component: SettingsComponent},
     {path : 'user-detail', component: UserDetailComponent},
     {path : 'users', component: UsersComponent},
+    {path : 'analytics', component: AnalyticsComponent},
     {path : 'leave', component: LeaveComponent},
     {path : 'leave/:id/:name', component: LeaveDetailsComponent},
 ];
