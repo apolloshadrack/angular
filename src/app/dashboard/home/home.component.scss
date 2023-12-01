@@ -1,0 +1,38 @@
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.card {
+  border: 1px solid #ddd; /* Add border or other styling as needed */
+  border-radius: 8px;
+  padding: 2rem;
+  width: 100%;
+  margin: 16px;
+}
+
+.card-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  width: 100%;
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+}
+
+.card-flex i {
+  margin-right: 12px;
+}
+
+.card-flex h3,
+.card-flex h4 {
+  margin: 0;
+}
+
+.card-flex p {
+  color: #777;
+  margin: 0;
+}
+
+/* Add additional styles as needed */
