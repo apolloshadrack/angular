@@ -1,3 +1,17 @@
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.intro-btn button {
+  background-color: #21999d;
+  padding: 10px 30px;
+  border-radius: 45px;
+  border: none;
+  color: #fff;
+}
 .card-container {
   display: flex;
   justify-content: space-around;
