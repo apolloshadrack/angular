@@ -91,13 +91,29 @@
   margin: 1rem 0;
   border-radius: 1rem;
 }
+
+.summary-intro {
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background-color: #e8edff;
+  width: 10%;
+  height: 10%;
+  gap: 10px;
+  border-radius: 0.5rem;
+}
+
+.summary-intro h3 {
+  margin: 0;
+}
 .summary-bar {
   display: flex;
   justify-content: space-between;
   margin-bottom: 12px;
   width: 100%;
   padding: 0 2rem;
-  border-bottom: 1px solid #7070706c;
+  //   border-bottom: 1px solid #7070706c;
 }
 
 .long-container {
@@ -107,9 +123,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: gray;
+  background-color: #d3d7d9;
   padding: 0.5rem 1rem;
   margin-bottom: 1rem;
+  border-radius: 0.5rem;
 }
 
 .long-bar h3 {
