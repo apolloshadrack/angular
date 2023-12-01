@@ -27,7 +27,41 @@ export class HomeComponent {
   };
 
   public title: any = {
-    text: 'Basic Column Chart',
+    text: '',
     align: 'left',
+  };
+
+  public chartOptions: any = {
+    series: [33.3, 33.3, 33.3],
+    colors: ['#51BDF9', '#0AA38A', '#2166AC'],
+    tooltip: {
+      fillSeriesColor: true,
+    },
+    chart: {
+      type: 'donut',
+    },
+    labels: ['Team A', 'Team B', 'Team C'],
+    plotOptions: {
+      pie: {
+        donut: {
+          labels: {
+            show: false, // Set to false to hide the numbers
+          },
+        },
+      },
+    },
+    responsive: [
+      {
+        breakpoint: 480,
+        options: {
+          chart: {
+            width: 200,
+          },
+          legend: {
+            position: 'bottom',
+          },
+        },
+      },
+    ],
   };
 }
