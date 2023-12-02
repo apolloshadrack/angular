@@ -12,10 +12,26 @@
   border: none;
   color: #fff;
 }
+
+.intro-text h1 {
+  margin-bottom: 0;
+  font-weight: 800;
+}
+
+.intro-text p {
+  color: #000000a7;
+}
 .card-container {
   display: flex;
   justify-content: space-around;
   width: 100%;
+}
+
+.activity h3,
+.glance h3 {
+  margin: 0;
+  font-size: 14px;
+  margin-left: 0.5rem;
 }
 
 .activity {
@@ -24,21 +40,15 @@
   align-items: center;
   background-color: #e3f2f6;
   width: 100%;
-  padding: 0 2rem;
+  padding: 0.5rem 2rem;
   margin-bottom: 1rem;
 }
 
-.activity i {
-  font-size: 24px;
-}
-.activity h3 {
-  margin-top: 12px;
-  margin-left: 10px;
+.activity i,
+.glance i {
+  font-size: 16px;
 }
 
-.glance h3 {
-  margin-top: 16px;
-}
 .card {
   border: 1px solid #ddd; /* Add border or other styling as needed */
   border-radius: 8px;
@@ -53,6 +63,18 @@
   width: 100%;
   padding: 0 2rem;
   border-bottom: 1px solid #7070706c;
+}
+
+.card-container .card .card-flex h4 {
+  font-size: 14px;
+  color: #000000a7;
+  margin: 0;
+}
+
+.card-container .card .card-flex p {
+  font-size: 12px;
+  color: #0000008d;
+  margin: 5px;
 }
 
 .last {
