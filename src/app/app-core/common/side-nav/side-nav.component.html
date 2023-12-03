@@ -1,44 +1,43 @@
 <div class="sideNav">
-    <img class="logo" src="/assets/images/logo.png">
-   
-    <ul class="menu">
-        <a [routerLink]="['/']" [routerLinkActive]="'menuActive'" [routerLinkActiveOptions]="{exact:true}">
-        <li >
-          
-            <i class="fa fa-tachometer"></i>
-            Dashboard
-     
-            </li>
-        </a>
+  <img class="logo" src="/assets/images/logo.png" />
 
-        <a [routerLink]="['/attendance']"  [routerLinkActive]="'menuActive'" [routerLinkActiveOptions]="{exact:true}" >
-        <li>
-           
-            <i class="fa fa-calendar"></i>Attendance
-            
-          
-        </li>
+  <ul class="menu">
+    <a
+      [routerLink]="['/']"
+      [routerLinkActive]="'menuActive'"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      <li>
+        <i class="fa fa-tachometer"></i>
+        Dashboard
+      </li>
     </a>
 
-    <a [routerLink]="['/leave']" [routerLinkActive]="'menuActive'" [routerLinkActiveOptions]="{exact:true}">
-        <li>
-            <i class="fa fa-calendar-o"></i>
-            Requests
-           
-        </li>
-    </a>
-    
-    <a [routerLink]="['/analytics']" [routerLinkActive]="'menuActive'" [routerLinkActiveOptions]="{exact:true}" >
-        <li>
-            
-            <i class="fa fa-pie-chart"></i>Analytics
-           
-        </li>
+    <a
+      [routerLink]="['/attendance']"
+      [routerLinkActive]="'menuActive'"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      <li><i class="fa fa-calendar"></i>Attendance</li>
     </a>
 
-    
+    <a
+      [routerLink]="['/leave']"
+      [routerLinkActive]="'menuActive'"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      <li>
+        <i class="fa fa-calendar-o"></i>
+        Requests
+      </li>
+    </a>
 
-    
-      
-    </ul>
+    <a
+      [routerLink]="['/analytics']"
+      [routerLinkActive]="'menuActive'"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      <li><i class="fa fa-pie-chart"></i>Analytics</li>
+    </a>
+  </ul>
 </div>
