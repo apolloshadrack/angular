@@ -10,6 +10,7 @@ import { LeaveDetailsComponent } from './dashboard/leave-details/leave-details.c
 import { AnalyticsComponent } from './dashboard/analytics/analytics.component';
 import { AttendanceInnerComponent } from './dashboard/attendance-inner/attendance-inner.component';
 import { AttendanceRegisterComponent } from './dashboard/attendance-register/attendance-register.component';
+import { ItSupportComponent } from './dashboard/it-support/it-support.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -23,4 +24,5 @@ export const routes: Routes = [
   { path: 'analytics', component: AnalyticsComponent },
   { path: 'leave', component: LeaveComponent },
   { path: 'leave/:id/:name', component: LeaveDetailsComponent },
+  { path: 'it-support', component: ItSupportComponent },
 ];

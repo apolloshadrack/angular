@@ -107,6 +107,11 @@
   height: 7.5rem;
 }
 
+.round-item a {
+  text-decoration: none;
+  color: black;
+}
+
 .round-item:hover {
   background-color: #21999d2e;
   border: none;
