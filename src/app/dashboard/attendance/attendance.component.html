@@ -1,11 +1,3 @@
-<!-- <div class="shadow" style="width: 100%; display:flex">
-    <div>
-        attendance
-    </div>
-    <div style="float: right;">
-        Today
-    </div>
-</div> -->
 <nav class="navbar navbar-expand-lg shadow" style="padding-bottom: 10px">
   <div class="container-fluid">
     <p
@@ -25,9 +17,7 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
-      <!-- <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        </form> -->
+
       <p style="padding-right: 20px; margin: 0px">
         <i
           class="fa fa-search"
@@ -68,7 +58,7 @@
     <tr *ngFor="let item of attendance">
       <td class="py-3 px-4">{{ item.id }}</td>
       <td class="py-3">
-        <a style="text-decoration: none" [routerLink]="['/leave']">
+        <a style="text-decoration: none" [routerLink]="['/attendance-inner']">
           <button
             class="btn btn-link"
             style="
@@ -85,7 +75,7 @@
           >
             <div>
               <img
-                src="../../../assets/images/profile.jpg"
+                src="../../../assets/sly.JPG"
                 alt="profile"
                 style="
                   width: 50px;
@@ -142,71 +132,5 @@
       </td>
       <td class="py-3">{{ item.number_of_times }}</td>
     </tr>
-    <!-- <tr>
-        <th scope="row">01</th>
-        <td>
-           <p style="border-radius: 40px;margin:0px;color:#000000;background-color:rgba(33, 153, 157, 0.2);padding:5px 40px;width:fit-content">
-            name.surname#meltwater.org<br/>
-            <span>
-                <i class="fa fa-circle" aria-hidden="true" style="color: #21999D;padding:5px;"></i>
-                <i class="fa fa-circle" aria-hidden="true" style="color: #21999D;padding:5px;"></i>
-                <i class="fa fa-circle" aria-hidden="true" style="color: #000000;padding:5px;"></i>
-            </span>
-            <span style="float: right;">2 minutes</span>
-            
-        </p> 
-        </td>
-        <td>7:30am</td>
-        <td>
-            <p style="border-radius: 40px;margin:0px;color:#ffffff;background-color:rgba(157, 33, 33, 1);padding:5px 40px;width:fit-content">
-                absent
-            </p> 
-        </td>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">02</th>
-        <td>
-           <p style="border-radius: 40px;margin:0px;color:#000000;background-color:rgba(33, 153, 157, 0.2);padding:5px 40px;width:fit-content">
-            name.surname#meltwater.org<br/>
-            <span>
-                <i class="fa fa-circle" aria-hidden="true" style="color: #21999D;padding:5px;"></i>
-                <i class="fa fa-circle" aria-hidden="true" style="color: #21999D;padding:5px;"></i>
-                <i class="fa fa-circle" aria-hidden="true" style="color: #000000;padding:5px;"></i>
-            </span>
-            <span style="float: right;">2 minutes</span>
-            
-        </p> 
-        </td>
-        <td>7:30am</td>
-        <td>
-            <p style="border-radius: 40px;margin:0px;color:#ffffff;background-color:#21999D;padding:5px 40px;width:fit-content">
-                present
-            </p> 
-        </td>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">03</th>
-        <td>
-           <p style="border-radius: 40px;margin:0px;color:#000000;background-color:rgba(33, 153, 157, 0.2);padding:5px 40px;width:fit-content">
-            name.surname#meltwater.org<br/>
-            <span>
-                <i class="fa fa-circle" aria-hidden="true" style="color: #21999D;padding:5px;"></i>
-                <i class="fa fa-circle" aria-hidden="true" style="color: #21999D;padding:5px;"></i>
-                <i class="fa fa-circle" aria-hidden="true" style="color: #000000;padding:5px;"></i>
-            </span>
-            <span style="float: right;">2 minutes</span>
-            
-        </p> 
-        </td>
-        <td>7:30am</td>
-        <td>
-            <p style="border-radius: 40px;margin:0px;color:#ffffff;background-color:#21999D;padding:5px 40px;width:fit-content">
-                present
-            </p> 
-        </td>
-        </td>
-      </tr> -->
   </tbody>
 </table>

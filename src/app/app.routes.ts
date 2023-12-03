@@ -8,10 +8,14 @@ import { UsersComponent } from './dashboard/users/users.component';
 import { LeaveComponent } from './dashboard/leave/leave.component';
 import { LeaveDetailsComponent } from './dashboard/leave-details/leave-details.component';
 import { AnalyticsComponent } from './dashboard/analytics/analytics.component';
+import { AttendanceInnerComponent } from './dashboard/attendance-inner/attendance-inner.component';
+import { AttendanceRegisterComponent } from './dashboard/attendance-register/attendance-register.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'attendance', component: AttendanceComponent },
+  { path: 'attendance-inner', component: AttendanceInnerComponent },
+  { path: 'attendance-register', component: AttendanceRegisterComponent },
   { path: 'reports', component: ReportsComponent },
   { path: 'settings', component: SettingsComponent },
   { path: 'user-detail', component: UserDetailComponent },
