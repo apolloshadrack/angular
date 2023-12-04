@@ -8,8 +8,8 @@ export class ItSupportService {
   private itSupportDB = [
     {
       id: '01',
-      eitID: 'paulo.ouana@meltwater.org',
-      createdAt: '20 mins ago',
+      eitID: 'oyin.ouana@meltwater.org',
+      createdAt: '10 mins ago',
       state: 'Open',
       description: 'View',
       category: 'Repair',
@@ -17,8 +17,8 @@ export class ItSupportService {
     },
     {
       id: '02',
-      eitID: 'paulo.ouana@meltwater.org',
-      createdAt: '20 mins ago',
+      eitID: 'rawk.ouana@meltwater.org',
+      createdAt: '10 mins ago',
       state: 'Progress',
       description: 'View',
       category: 'Borrow',
@@ -26,8 +26,8 @@ export class ItSupportService {
     },
     {
       id: '03',
-      eitID: 'paulo.ouana@meltwater.org',
-      createdAt: '20 mins ago',
+      eitID: 'precious.ouana@meltwater.org',
+      createdAt: '30 mins ago',
       state: 'Resolved',
       description: 'View',
       category: 'Repair',
@@ -35,8 +35,8 @@ export class ItSupportService {
     },
     {
       id: '04',
-      eitID: 'paulo.ouana@meltwater.org',
-      createdAt: '20 mins ago',
+      eitID: 'obehi.ouana@meltwater.org',
+      createdAt: '10 mins ago',
       state: 'Open',
       description: 'View',
       category: 'Borrow',
@@ -44,8 +44,8 @@ export class ItSupportService {
     },
     {
       id: '05',
-      eitID: 'paulo.ouana@meltwater.org',
-      createdAt: '20 mins ago',
+      eitID: 'derek.ouana@meltwater.org',
+      createdAt: '30 mins ago',
       state: 'Open',
       description: 'View',
       category: 'Repair',
@@ -53,8 +53,8 @@ export class ItSupportService {
     },
     {
       id: '06',
-      eitID: 'paulo.ouana@meltwater.org',
-      createdAt: '20 mins ago',
+      eitID: 'miranda.ouana@meltwater.org',
+      createdAt: '10 mins ago',
       state: 'Open',
       description: 'View',
       category: 'Borrow',
@@ -62,8 +62,8 @@ export class ItSupportService {
     },
     {
       id: '07',
-      eitID: 'paulo.ouana@meltwater.org',
-      createdAt: '20 mins ago',
+      eitID: 'fleur.ouana@meltwater.org',
+      createdAt: '10 mins ago',
       state: 'Open',
       description: 'View',
       category: 'Repair',
@@ -71,8 +71,8 @@ export class ItSupportService {
     },
     {
       id: '08',
-      eitID: 'paulo.ouana@meltwater.org',
-      createdAt: '20 mins ago',
+      eitID: 'andrew.ouana@meltwater.org',
+      createdAt: '30 mins ago',
       state: 'Open',
       description: 'View',
       category: 'Borrow',
