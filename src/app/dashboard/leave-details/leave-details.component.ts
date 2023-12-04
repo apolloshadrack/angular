@@ -8,25 +8,27 @@ import { LeaveService } from '../../services/leave.service';
   standalone: true,
   imports: [CommonModule, RouterModule],
   templateUrl: './leave-details.component.html',
-  styleUrl: './leave-details.component.scss'
+  styleUrl: './leave-details.component.scss',
 })
 export class LeaveDetailsComponent implements OnInit {
-    leaveId = '';
-    createdBy = '';
-    leaveType = '';
-    leaveStartDate = '';
-    leaveEndDate ='';
-    leave: any;
-  constructor(private route: ActivatedRoute,
-    private leaveService: LeaveService){}
+  leaveId = '';
+  createdBy = '';
+  leaveType = '';
+  leaveStartDate = '';
+  leaveEndDate = '';
+  leave: any;
+  constructor(
+    private route: ActivatedRoute,
+    private leaveService: LeaveService
+  ) {}
   ngOnInit(): void {
-      this.route.params.subscribe(param =>{
-        this.leaveId = param["id"];
-        this.getMyLeaveById(parseInt(this.leaveId));
-      })
+    this.route.params.subscribe((param) => {
+      this.leaveId = param['id'];
+      this.getMyLeaveById(parseInt(this.leaveId));
+    });
   }
-  getMyLeaveById(id: number){
-    this.leaveService.getLeavesById(id).subscribe(resp =>{
+  getMyLeaveById(id: number): void {
+    this.leaveService.getLeaveByID(id).subscribe((resp: any) => {
       this.leave = resp;
     });
   }
