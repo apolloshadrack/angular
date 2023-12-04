@@ -27,4 +27,5 @@ export const routes: Routes = [
   { path: 'leave/:id/:name', component: LeaveDetailsComponent },
   { path: 'it-support', component: ItSupportComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'settings', component: SettingsComponent },
 ];

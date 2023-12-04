@@ -4,13 +4,13 @@
   box-sizing: border-box;
 }
 
-.mainContentWrapper {
+.main-content-wrapper {
   width: 100%;
   padding: 2rem;
 }
 
 @media screen and (max-width: 600px) {
-  .mainContentWrapper {
+  .main-content-wrapper {
     padding: 0rem;
   }
 }
