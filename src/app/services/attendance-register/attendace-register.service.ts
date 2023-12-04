@@ -8,7 +8,7 @@ export class AttendanceRegisterService {
   private attendanceDB = [
     {
       id: 1,
-      employeeName: 'Sila Muremwa',
+      employeeName: 'Precious Deyemi',
       week1_status: 'absent',
       week2_status: 'present',
       week3_status: 'present',
@@ -36,7 +36,7 @@ export class AttendanceRegisterService {
     },
     {
       id: 2,
-      employeeName: 'Nkwi Loh',
+      employeeName: 'Oyinlade Ojesanmi',
       week1_status: 'absent',
       week2_status: 'present',
       week3_status: 'present',
@@ -64,7 +64,7 @@ export class AttendanceRegisterService {
     },
     {
       id: 3,
-      employeeName: 'Misheck Lukhama',
+      employeeName: 'Miranda Loh',
       week1_status: 'absent',
       week2_status: 'present',
       week3_status: 'present',
@@ -92,7 +92,7 @@ export class AttendanceRegisterService {
     },
     {
       id: 4,
-      employeeName: 'Karen Wanyama',
+      employeeName: 'Benard Sackey',
       week1_status: 'absent',
       week2_status: 'present',
       week3_status: 'present',
@@ -120,7 +120,7 @@ export class AttendanceRegisterService {
     },
     {
       id: 5,
-      employeeName: 'Peris Muthoni',
+      employeeName: 'Derek Koffi',
       week1_status: 'absent',
       week2_status: 'present',
       week3_status: 'present',
@@ -148,7 +148,7 @@ export class AttendanceRegisterService {
     },
     {
       id: 5,
-      employeeName: 'Xarri Randy',
+      employeeName: 'Kwi Loh',
       week1_status: 'absent',
       week2_status: 'present',
       week3_status: 'present',
