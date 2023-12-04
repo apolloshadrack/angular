@@ -8,17 +8,17 @@ import { UsersComponent } from './dashboard/users/users.component';
 import { LeaveComponent } from './dashboard/leave/leave.component';
 import { LeaveDetailsComponent } from './dashboard/leave-details/leave-details.component';
 import { AnalyticsComponent } from './dashboard/analytics/analytics.component';
-import { ItSupportComponent } from './dashboard/it-support/it-support.component';
 
 export const routes: Routes = [
-    {path : '', component: HomeComponent},
-    {path : 'attendance', component: AttendanceComponent},
-    {path : 'reports', component: ReportsComponent},
-    {path : 'settings', component: SettingsComponent},
-    {path : 'user-detail', component: UserDetailComponent},
-    {path : 'users', component: UsersComponent},
-    {path : 'analytics', component: AnalyticsComponent},
-    {path : 'leave', component: LeaveComponent},
-    {path : 'leave/:id/:name', component: LeaveDetailsComponent},
+  { path: '', component: HomeComponent },
+  { path: 'attendance', component: AttendanceComponent },
+  { path: 'reports', component: ReportsComponent },
+  { path: 'settings', component: SettingsComponent },
+  { path: 'user-detail', component: UserDetailComponent },
+  { path: 'users', component: UsersComponent },
+  { path: 'analytics', component: AnalyticsComponent },
+  { path: 'leave', component: LeaveComponent },
+  { path: 'leave/:id/:name', component: LeaveDetailsComponent },
+  { path: 'login', component: LoginComponent },
     {path : 'it-support', component: ItSupportComponent},
 ];
