@@ -1,110 +1,108 @@
 <div class="req-body">
-    <div class="body-head">
-  
-        <button class="requestBtn">
-            <i class="fa fa-bed"></i>
-            Requests
-        </button>
-        <div class="righties">
-            <button class="searchBtn">
-                <mat-icon>search</mat-icon>
-                Filter
-            </button>
-            <button class="filterBtn">
-                <span>Today</span>
-                <mat-icon>expand_more</mat-icon>
-            </button>
-        </div>
-    </div>
-    <div class="requests-wrapper">
-  
-        <mat-tab-group dynamicHeight animationDuration="0ms">
-            <mat-tab label="Requests">
-  
-                <mat-card>
-                    <mat-card-content>
-                        <table mat-table [dataSource] = "dataSource" class="mat-elevation-z0">
-  
-  
-                            <ng-container matColumnDef="id">
-                                <th mat-header-cell *matHeaderCellDef> No. </th>
-                                <td mat-cell *matCellDef="let element"> {{element.id}} </td>
-                            </ng-container>
-  
-                            <ng-container matColumnDef="EIT_id">
-                                <th mat-header-cell *matHeaderCellDef> EIT ID </th>
-                                <td mat-cell *matCellDef="let element">
-                                    <div class="avatar-wrapper">
-                                        <span class="avatar">{{element.EIT_id.charAt(0)}}</span>
-                                        <div class="time">
-                                        {{element.EIT_id}}
-                                        <p>Created 10 min ago</p>
-                                    </div>
-                                    </div>
-                                </td>
-                               </ng-container>
-                               
-                             
-  
-                            <ng-container matColumnDef="type">
-                                <th mat-header-cell *matHeaderCellDef> Type </th>
-                                <td mat-cell *matCellDef="let element">
-                                    <button mat-fab extended class={{element?.type}}>
-                                        {{ element.type }}
-                                    </button>
-                                </td>
-                            </ng-container>
-  
-  
-  
-                            <ng-container matColumnDef="date">
-                                <th mat-header-cell *matHeaderCellDef> Date </th>
-                                <td mat-cell *matCellDef="let element" class="date"> {{element.date}} </td>
-                            </ng-container>
-  
-                            <ng-container matColumnDef="status">
-                                <th mat-header-cell *matHeaderCellDef> Status </th>
-                                <td mat-cell *matCellDef="let element" class="button">
-                                    @if (element?.status=='Accepted') {
-                                    <button mat-fab extended color="link" class={{element?.status}}>
-                                        {{element?.status}}
-                                        <mat-icon>check</mat-icon>
-                                    
-                                    </button>
-  
-                                    }
-  
-                                    @if(element?.status=="Declined"){
-                                    <button mat-fab extended color="warn" class={{element?.status}}>
-                                        {{element?.status}}
-                                        <mat-icon>close</mat-icon>
-                                       
-                                    </button>
-                                    }
-  
-                                    @if(element?.status=="Pending "){
-                                    <button mat-fab extended color="" class={{element?.status}}>
-                                        {{element?.status}}
-                                        <mat-icon>chevron_right</mat-icon>                                       
-                                    </button>
-  
-                                    }
-  
-                                </td>
-  
-                            </ng-container>
-  
-                            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-                            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-                        </table>
-                    </mat-card-content>
-                </mat-card>
-  
-            </mat-tab>
-            <mat-tab label="Total Requests">
-                <h2>For Shad's Team</h2>
-            </mat-tab>
-        </mat-tab-group>
-  
+  <div class="body-head">
+    <button class="requestBtn">
+      <i class="fa fa-bed"></i>
+      Requests
+    </button>
+    <div class="righties">
+      <button class="searchBtn">
+        <mat-icon>search</mat-icon>
+        Filter
+      </button>
+      <button class="filterBtn">
+        <span>Today</span>
+        <mat-icon>expand_more</mat-icon>
+      </button>
     </div>
   </div>
+  <div class="requests-wrapper">
+    <mat-tab-group dynamicHeight animationDuration="0ms">
+      <mat-tab label="Requests">
+        <mat-card>
+          <mat-card-content>
+            <table mat-table [dataSource]="dataSource" class="mat-elevation-z0">
+              <ng-container matColumnDef="id">
+                <th mat-header-cell *matHeaderCellDef>No.</th>
+                <td mat-cell *matCellDef="let element">{{ element.id }}</td>
+              </ng-container>
+
+              <ng-container matColumnDef="EIT_id">
+                <th mat-header-cell *matHeaderCellDef>EIT ID</th>
+                <td mat-cell *matCellDef="let element">
+                  <div class="avatar-wrapper">
+                    <span class="avatar">{{ element.EIT_id.charAt(0) }}</span>
+                    <div class="time">
+                      {{ element.EIT_id }}
+                      <p>Created 10 min ago</p>
+                    </div>
+                  </div>
+                </td>
+              </ng-container>
+
+              <ng-container matColumnDef="type">
+                <th mat-header-cell *matHeaderCellDef>Type</th>
+                <td mat-cell *matCellDef="let element">
+                  <button mat-fab extended class="{{ element?.type }}">
+                    {{ element.type }}
+                  </button>
+                </td>
+              </ng-container>
+
+              <ng-container matColumnDef="date">
+                <th mat-header-cell *matHeaderCellDef>Date</th>
+                <td mat-cell *matCellDef="let element" class="date">
+                  {{ element.date }}
+                </td>
+              </ng-container>
+
+              <ng-container matColumnDef="status">
+                <th mat-header-cell *matHeaderCellDef>Status</th>
+                <td mat-cell *matCellDef="let element" class="button">
+                  @if (element?.status=='Accepted') {
+                  <button
+                    mat-fab
+                    extended
+                    color="link"
+                    class="{{ element?.status }}"
+                  >
+                    {{ element?.status }}
+                    <mat-icon>check</mat-icon>
+                  </button>
+
+                  } @if(element?.status=="Declined"){
+                  <button
+                    mat-fab
+                    extended
+                    color="warn"
+                    class="{{ element?.status }}"
+                  >
+                    {{ element?.status }}
+                    <mat-icon>close</mat-icon>
+                  </button>
+                  } @if(element?.status=="Pending "){
+                  <button
+                    mat-fab
+                    extended
+                    color=""
+                    class="{{ element?.status }}"
+                  >
+                    {{ element?.status }}
+                    <mat-icon>chevron_right</mat-icon>
+                  </button>
+
+                  }
+                </td>
+              </ng-container>
+
+              <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+              <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+            </table>
+          </mat-card-content>
+        </mat-card>
+      </mat-tab>
+      <mat-tab label="Total Requests">
+        <h2>For Shad's Team</h2>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+</div>

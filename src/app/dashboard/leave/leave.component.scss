@@ -1,182 +1,178 @@
-.table{
-    width: 100%;
+.table {
+  width: 100%;
 }
 
-.body-head{
-    display: flex;
-    justify-content: space-between;
+.body-head {
+  display: flex;
+  justify-content: space-between;
 }
 
-.body-head .righties .searchBtn{
-    border: none;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    border-radius: 10%;
-    background-color: transparent;
-    margin-right: 20px;
-    color: grey;
-    gap: 5px;
+.body-head .righties .searchBtn {
+  border: none;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 10%;
+  background-color: transparent;
+  margin-right: 20px;
+  color: grey;
+  gap: 5px;
 }
 
-.requestBtn{
-    border: none;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    border-radius: 40px;
-    background-color: #21999d24;
-    margin-right: 20px;
-    padding: 10px 30px;
-    color: #21999d;
-    gap: 5px; 
+.requestBtn {
+  border: none;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 40px;
+  background-color: #21999d24;
+  margin-right: 20px;
+  padding: 10px 30px;
+  color: #21999d;
+  gap: 5px;
 }
 
-.body-head .righties .filterBtn{
-    border: none;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    border-radius: 40px;
-    padding: 10px 30px;
-    background-color: #21999d;
-    margin-right: 20px;
-    color: white;
-    gap: 5px;
+.body-head .righties .filterBtn {
+  border: none;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 40px;
+  padding: 10px 30px;
+  background-color: #21999d;
+  margin-right: 20px;
+  color: white;
+  gap: 5px;
 }
 
-.body-head .righties .searchBtn:hover{
-    background-color: whitesmoke;
+.body-head .righties .searchBtn:hover {
+  background-color: whitesmoke;
 }
 
-.body-head .righties{
-    display: flex;
+.body-head .righties {
+  display: flex;
 }
 
 /* Accepted button */
 button.Accepted {
-    background-color: #37c03b; /* Green */
-    border: none;
-    display: flex;
-    align-items: center;
-    color: white;
-    padding: 0px 20px !important;
-    text-align: center;
-    text-decoration: none;
-    font-size: 12px;
-    margin: 10px 5px;
-    cursor: pointer;
-    height: 37px;
-    box-shadow: none;
-    font-weight: 400;
-   }
-   
-   /* Declined button */
-   button.Declined {
-    background-color: rgb(246, 53, 92); /* Red */
-    border: none;
-    color: white;
-    padding: 0px 20px !important;
-    text-align: center;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    font-size: 12px;
-    margin: 10px 5px;
-    cursor: pointer;
-    height: 37px;
-    box-shadow: none;
-    font-weight: 400;
-   }
-   
-   /* Pending button */
-   button.Pending {
-    background-color: #fdb242; /* Orange */
-    border: none;
-    color: white;
-    padding: 0px 20px !important;
-    text-align: center;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    font-size: 12px;
-    margin: 10px 5px;
-    cursor: pointer;
-    height: 37px;
-    box-shadow: none;
-    font-weight: 400;
-   }
+  background-color: #37c03b; /* Green */
+  border: none;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 0px 20px !important;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  margin: 10px 5px;
+  cursor: pointer;
+  height: 37px;
+  box-shadow: none;
+  font-weight: 400;
+}
 
-   button.Property{
-    background-color: transparent; /* Orange */
-    border: none;
-    color: #c51fce;
-    border: 1px solid #c51fce;
-    padding: 0px 20px !important;
-    text-align: center;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    font-size: 12px;
-    margin: 10px 5px;
-    cursor: pointer;
-    height: 30px;
-    box-shadow: none;
-    font-weight: 400;
-    min-width: 100px;
-   }
-   
+/* Declined button */
+button.Declined {
+  background-color: rgb(246, 53, 92); /* Red */
+  border: none;
+  color: white;
+  padding: 0px 20px !important;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  margin: 10px 5px;
+  cursor: pointer;
+  height: 37px;
+  box-shadow: none;
+  font-weight: 400;
+}
 
-   button.Sick{
-    background-color: transparent; /* Orange */
-    border: none;
-    color: rgb(33, 157, 97);
-    border: 1px solid rgb(33, 157, 97);
-    padding: 0px 20px !important;
-    text-align: center;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    font-size: 12px;
-    margin: 10px 5px;
-    cursor: pointer;
-    height: 30px;
-    box-shadow: none;
-    font-weight: 400;
-    min-width: 100px;
-   }
+/* Pending button */
+button.Pending {
+  background-color: #fdb242; /* Orange */
+  border: none;
+  color: white;
+  padding: 0px 20px !important;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  margin: 10px 5px;
+  cursor: pointer;
+  height: 37px;
+  box-shadow: none;
+  font-weight: 400;
+}
 
-   .avatar-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-   }
+button.Property {
+  background-color: transparent; /* Orange */
+  border: none;
+  color: #c51fce;
+  border: 1px solid #c51fce;
+  padding: 0px 20px !important;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  margin: 10px 5px;
+  cursor: pointer;
+  height: 30px;
+  box-shadow: none;
+  font-weight: 400;
+  min-width: 100px;
+}
 
-   .avatar-wrapper .time{
-    display: block;
-    padding-top: 10px;
-   }
+button.Sick {
+  background-color: transparent; /* Orange */
+  border: none;
+  color: rgb(33, 157, 97);
+  border: 1px solid rgb(33, 157, 97);
+  padding: 0px 20px !important;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  margin: 10px 5px;
+  cursor: pointer;
+  height: 30px;
+  box-shadow: none;
+  font-weight: 400;
+  min-width: 100px;
+}
 
-   .avatar-wrapper .time p{
-    font-size: 12px;
-    color: grey;
-   }
+.avatar-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
 
-   .avatar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    text-transform: uppercase;
-    height: 40px;
-    line-height: 48px;
-    text-align: center;
-    color: #fff;
-    background-color: #21999d; /* Green */
-    font-size: 18px;
-    border-radius: 50%;
-    margin-right: 10px;
-   }
-   
-   
-   
+.avatar-wrapper .time {
+  display: block;
+  padding-top: 10px;
+}
+
+.avatar-wrapper .time p {
+  font-size: 12px;
+  color: grey;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  text-transform: uppercase;
+  height: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: #fff;
+  background-color: #21999d; /* Green */
+  font-size: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+}

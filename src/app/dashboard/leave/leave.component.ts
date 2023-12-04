@@ -7,36 +7,37 @@ import { MatTableModule } from '@angular/material/table';
 import { MatCardModule } from '@angular/material/card';
 import { MaterialModule } from '../../material/material.module';
 
-
-
 @Component({
   selector: 'app-leave',
   standalone: true,
-  imports: [CommonModule, RouterLink, MatTabsModule, MatTableModule, MatCardModule, MaterialModule],
+  imports: [
+    CommonModule,
+    RouterLink,
+    MatTabsModule,
+    MatTableModule,
+    MatCardModule,
+    MaterialModule,
+  ],
   templateUrl: './leave.component.html',
   styleUrl: './leave.component.scss',
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None,
 })
-
 export class LeaveComponent implements OnInit {
-  dataSource :any;
-  displayedColumns:string [] = [];
+  dataSource: any;
+  displayedColumns: string[] = [];
   leaves: any[] = [];
 
-  constructor(
-    private leaveService: LeaveService
-  ){}
+  constructor(private leaveService: LeaveService) {}
 
   getLeaves() {
-    this.leaveService.getLeaves().subscribe((response:any) => {
+    this.leaveService.getLeaves().subscribe((response: any) => {
       this.leaves = response;
-    })
+    });
   }
 
   ngOnInit(): void {
-      this.getLeaves();
-      this.displayedColumns = ['id', 'EIT_id', 'type', 'date', 'status'];
-      this.dataSource = this.leaves;
+    this.getLeaves();
+    this.displayedColumns = ['id', 'EIT_id', 'type', 'date', 'status'];
+    this.dataSource = this.leaves;
   }
-
 }
