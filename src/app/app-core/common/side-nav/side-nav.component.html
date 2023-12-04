@@ -1,85 +1,44 @@
-<!-- <div class="sideNav">
-  <img class="logo" src="/assets/images/logo.png" />
+<div class="sideNav">
+    <img class="logo" src="/assets/images/logo.png">
+   
+    <ul class="menu">
+        <a [routerLink]="['/']" [routerLinkActive]="'menuActive'" [routerLinkActiveOptions]="{exact:true}">
+        <li >
+          
+            <i class="fa fa-tachometer"></i>
+            Dashboard
+     
+            </li>
+        </a>
 
-  <ul class="menu">
-    <a
-      [routerLink]="['/']"
-      [routerLinkActive]="'menuActive'"
-      [routerLinkActiveOptions]="{ exact: true }"
-    >
-      <li>
-        <i class="fa fa-tachometer"></i>
-        Dashboard
-      </li>
+        <a [routerLink]="['/attendance']"  [routerLinkActive]="'menuActive'" [routerLinkActiveOptions]="{exact:true}" >
+        <li>
+           
+            <i class="fa fa-calendar"></i>Attendance
+            
+          
+        </li>
     </a>
 
-    <a
-      [routerLink]="['/attendance']"
-      [routerLinkActive]="'menuActive'"
-      [routerLinkActiveOptions]="{ exact: true }"
-    >
-      <li><i class="fa fa-calendar"></i>Attendance</li>
+    <a [routerLink]="['/leave']" [routerLinkActive]="'menuActive'" [routerLinkActiveOptions]="{exact:true}">
+        <li>
+            <i class="fa fa-calendar-o"></i>
+            Requests
+           
+        </li>
+    </a>
+    
+    <a [routerLink]="['/analytics']" [routerLinkActive]="'menuActive'" [routerLinkActiveOptions]="{exact:true}" >
+        <li>
+            
+            <i class="fa fa-pie-chart"></i>Analytics
+           
+        </li>
     </a>
 
-    <a
-      [routerLink]="['/leave']"
-      [routerLinkActive]="'menuActive'"
-      [routerLinkActiveOptions]="{ exact: true }"
-    >
-      <li>
-        <i class="fa fa-calendar-o"></i>
-        Requests
-      </li>
-    </a>
+    
 
-    <a
-      [routerLink]="['/analytics']"
-      [routerLinkActive]="'menuActive'"
-      [routerLinkActiveOptions]="{ exact: true }"
-    >
-      <li><i class="fa fa-pie-chart"></i>Analytics</li>
-    </a>
-  </ul>
-</div> -->
-
-<div class="side-nav">
-  <ul class="menu">
-    <a
-      [routerLink]="['/']"
-      [routerLinkActive]="'menuActive'"
-      [routerLinkActiveOptions]="{ exact: true }"
-    >
-      <li>
-        <i class="fa fa-tachometer"></i>
-        Dashboard
-      </li>
-    </a>
-
-    <a
-      [routerLink]="['/attendance']"
-      [routerLinkActive]="'menuActive'"
-      [routerLinkActiveOptions]="{ exact: true }"
-    >
-      <li><i class="fa fa-calendar"></i>Attendance</li>
-    </a>
-
-    <a
-      [routerLink]="['/leave']"
-      [routerLinkActive]="'menuActive'"
-      [routerLinkActiveOptions]="{ exact: true }"
-    >
-      <li>
-        <i class="fa fa-calendar-o"></i>
-        Requests
-      </li>
-    </a>
-
-    <a
-      [routerLink]="['/analytics']"
-      [routerLinkActive]="'menuActive'"
-      [routerLinkActiveOptions]="{ exact: true }"
-    >
-      <li><i class="fa fa-pie-chart"></i>Analytics</li>
-    </a>
-  </ul>
+    
+      
+    </ul>
 </div>

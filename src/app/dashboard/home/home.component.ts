@@ -1,12 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
 import { NgApexchartsModule } from 'ng-apexcharts';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, NgApexchartsModule, RouterModule],
+  imports: [CommonModule, NgApexchartsModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
