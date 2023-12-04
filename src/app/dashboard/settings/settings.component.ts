@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SettingsUserComponent } from '../settings-user/settings-user.component';
+
 import { MatTabsModule } from '@angular/material/tabs';
+import { SettingsUserComponent } from '../setting-user/setting-user.component';
 
 @Component({
   selector: 'app-settings',
