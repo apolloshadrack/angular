@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { SettingsUserComponent } from '../settings-user/settings-user.component';
+import { MatTabsModule } from '@angular/material/tabs';
 
 @Component({
   selector: 'app-settings',
   standalone: true,
-  imports: [CommonModule],
   templateUrl: './settings.component.html',
-  styleUrl: './settings.component.scss'
+  styleUrl: './settings.component.scss',
+  imports: [CommonModule, SettingsUserComponent, MatTabsModule],
 })
-export class SettingsComponent {
-
-}
+export class SettingsComponent {}
