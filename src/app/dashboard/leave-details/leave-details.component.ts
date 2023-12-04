@@ -25,8 +25,8 @@ export class LeaveDetailsComponent implements OnInit {
         this.getMyLeaveById(parseInt(this.leaveId));
       })
   }
-  getMyLeaveById(id: number){
-    this.leaveService.getLeavesById(id).subscribe(resp =>{
+  getMyLeaveById(id: number): void {
+    this.leaveService.getLeaveByID(id).subscribe((resp: any) =>{
       this.leave = resp;
     });
   }
